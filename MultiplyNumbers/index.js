@@ -4,7 +4,7 @@ module.exports = async function (context, req) {
     if (req.query.num1 && req.query.num2 && (!isNaN(req.query.num1)) && (!isNaN(req.query.num2))) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "The result is: " + req.query.num1 * req.query.num2
+            body: "The calculation result is: " + req.query.num1 * req.query.num2
         };
     } else {
         context.res = {
